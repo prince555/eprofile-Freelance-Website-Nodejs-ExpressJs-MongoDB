@@ -1,0 +1,27 @@
+<%- include('header') %>
+
+
+<form action="/professional/edit" method="POST" role="form">
+  <div class="Cont">
+    <h2 class="name">Edit Professional Skills</h2>
+    <input type="hidden" name="id" value="<%= id %>">
+
+  <div class="alert alert-info">
+    <input type="text" class="form-control" name="sname" value="<%= records.fname %>" >
+  </div>
+  <div class="alert alert-info">
+    <input type="text" class="form-control" name="percent" value="<%= records.fpercent %>" >
+  </div>
+  <div class="alert alert-info" style="display: none;">
+    <input type="text" class="form-control" name="user_name" value="<%= user.name %>">
+  </div>
+  <div class="alert alert-info">
+    <input type="submit" value="Update" >
+  </div>
+  </div>
+  </form>
+  <hr>
+  
+</div>
+</body>
+</html>

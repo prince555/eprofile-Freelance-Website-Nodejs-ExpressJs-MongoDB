@@ -1,0 +1,27 @@
+<%- include('header') %>
+
+
+<form action="/technical/edit" method="POST" role="form">
+  <div class="Cont">
+    <h2 class="name">Edit Technical Skills</h2>
+    <input type="hidden" name="id" value="<%= id %>">
+
+  <div class="alert alert-info">
+    <input type="text" class="form-control" name="sname" value="<%= records.sname %>" placeholder="enter your Technical Skill">
+  </div>
+  <div class="alert alert-info">
+    <input type="text" class="form-control" name="percent" value="<%= records.percent %>" placeholder="Enter percent of knowledge you have on that skill">
+  </div>
+  <div class="alert alert-info" style="display: none;">
+    <input type="text" class="form-control" name="user_name" value="<%= user.name %>">
+  </div>
+  <div class="alert alert-info">
+    <input type="submit" value="Update" >
+  </div>
+  </div>
+  </form>
+  <hr>
+  
+</div>
+</body>
+</html>

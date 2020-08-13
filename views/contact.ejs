@@ -1,0 +1,21 @@
+<%- include('header') %>
+
+
+
+
+    <h2 class="name">Messages</h2>
+
+    <% if(records.length >0){
+      records.forEach(function(row){
+      %>
+  <div class="alert alert-warning">
+    <strong>Name: </strong><a class="alert-link"><%= row.qualif %> <%= row.eschool %></a>.<br>
+    <strong>Email: </strong><a class="alert-link"><%= row.ebatch %></a>.<br>
+    <strong>Message: </strong><a class="alert-link"><%= row.edetails %></a>.<br>
+    <a class="alert-link"><%= row.percent %></a>.<br>
+  </div>
+  <%  }) } %>
+  
+</div>
+</body>
+</html>

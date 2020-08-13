@@ -1,0 +1,55 @@
+<%- include('header') %>
+
+    <form action="/education" method="POST" role="form">
+  <div class="Cont">
+    <h2 class="name">Education Details</h2>
+
+    <% if(success !=''){%>
+      <div class="alert alert-success">
+        <a class="alert-link"><%= success %></a>.
+      </div><br>
+      <% } %>
+
+    <% if(records.length >0){
+      records.forEach(function(row){
+      %>
+
+  <div class="alert alert-warning">
+    <strong>Qualification: </strong><a class="alert-link"><%= row.qualif %></a><br>
+    <strong>Name of school/scollege/University: </strong><a class="alert-link"><%= row.eschool %></a><br>
+    <strong>Batch: </strong> <a class="alert-link"><%= row.ebatch %></a><br>
+    <strong>Details: </strong><a class="alert-link"><%= row.edetails %></a>.<br>
+    <a href="/education/edit/<%= row._id %>"><strong style="color: blue;">Edit <i class="fa fa-edit"></i></strong></a>
+    <a href="/education/delete/<%= row._id %>"><strong style="color: red">Delete <i class="fa fa-trash"></i></strong></a>
+
+  </div>
+
+  <%  }) } %>
+
+  <div class="alert alert-info">
+    <input type="text" class="form-control" name="qualification" placeholder="enter Qualification">
+  </div>
+  <div class="alert alert-info">
+    <input type="text" class="form-control" name="eschool" placeholder="enter Name of school/scollege/University">
+  </div>
+  <div class="alert alert-info">
+    <input type="text" class="form-control" name="ebatch" placeholder="enter Batch">
+  </div>
+  <div class="alert alert-info">
+    <input type="text" class="form-control" name="edetails" placeholder="enter few Details">
+  </div>
+  <div class="alert alert-info" style="display: none;">
+    <input type="text" class="form-control" name="user_name" value="<%= user.name %>">
+  </div>
+  <div class="alert alert-info">
+    <input type="submit" >
+  </div>
+  </div>
+  </form>
+  <a style="margin-left: 20px; font-size:20px;" href="/professional">previous</a>
+  <a style="float:right; margin-right: 20px; font-size:20px;" href="/work">next</a>
+  <hr>
+
+</div>
+</body>
+</html>

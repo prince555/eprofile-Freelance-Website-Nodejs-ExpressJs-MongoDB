@@ -1,0 +1,33 @@
+<%- include('header') %>
+
+
+<form action="/projects/edit" method="POST" role="form">
+  <div class="Cont">
+    <h2 class="name">Edit Project Details</h2>
+    <input type="hidden" name="id" value="<%= id %>">
+
+    <div class="alert alert-info">
+        <input type="text" class="form-control" name="qualification" value="<%= records.qualif %>" placeholder="enter Qualification">
+      </div>
+      <div class="alert alert-info">
+        <input type="text" class="form-control" name="eschool" value="<%= records.eschool %>" placeholder="enter Name of school/scollege/University">
+      </div>
+      <div class="alert alert-info">
+        <input type="text" class="form-control" name="ebatch" value="<%= records.ebatch %>" placeholder="enter Batch">
+      </div>
+      <div class="alert alert-info">
+        <input type="text" class="form-control" name="edetails" value="<%= records.edetails %>" placeholder="enter few Details">
+      </div>
+  <div class="alert alert-info" style="display: none;">
+    <input type="text" class="form-control" name="user_name" value="<%= user.name %>">
+  </div>
+  <div class="alert alert-info">
+    <input type="submit" value="Update" >
+  </div>
+  </div>
+  </form>
+  <hr>
+  
+</div>
+</body>
+</html>

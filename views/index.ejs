@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/element.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<style>
+		
+		.sidenav {
+		  height: 100%;
+		  width: 0;
+		  position: fixed;
+		  z-index: 9999;
+		  top: 0;
+		  right: 0;
+		  background-color: #cf1334;
+		  overflow-x: hidden;
+		  transition: 0.5s;
+		  padding-top: 60px;
+		}
+		
+		.sidenav a {
+		  padding: 8px 8px 8px 32px;
+		  text-decoration: none;
+		  font-size: 25px;
+		  color: #f9f8f8;
+		  display: block;
+		  transition: 0.3s;
+		}
+		
+		.sidenav a:hover {
+		  color: #f1f1f1;
+		}
+		
+		.sidenav .closebtn {
+		  position: absolute;
+		  top: 0;
+		  left: 25px;
+		  font-size: 36px;
+		  margin-left: 50px;
+		}
+		
+		@media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;}
+		  .sidenav a {font-size: 18px;}
+		}
+		</style>
+
+</head>
+<body>
+
+
+<div class="preloader"></div>
+
+
+	<!-- <header class="main-header" id="home">
+		<div class="container-fluid">
+			<div class="pull-left">
+				<div class="logo"><a href="index-2.html"><img src="images/logo.png" alt=""></a></div>
+			</div>
+			<div class="pull-right">
+				<div class="menu">
+					<ul class="scroll-nav">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#demo">Main Demo</a></li>
+						<li><a href="#feature">Features</a></li>
+						<li><a href="#core-feature">Core Feature</a></li>
+					</ul>
+				</div>
+				<div class="link-btn"><a href="https://themeforest.net/item/bari-portfolio-for-freelancers-agencies/22131398?s_rank=1" class="theme-btn btn-style-one" target="_blank">Buy Now</a></div>
+			</div>
+		</div>
+	</header> -->
+	
+	<header>
+		<div class="containe">
+			<nav class="nav">
+				<ul class="nav-list nav-list-mobile">
+					<li class="nav-item" onclick="openNav()">
+						<div class="mobile-menu">
+							<span class="line line-top"></span>
+							<span class="line line-bottom"></span>
+						</div>
+					</li>
+					<li class="nav-item" style="width: 200px; height: 37px;">
+						<a href="index.html" class="nav-link nav-link-apple"></a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link nav-link-bag"></a>
+					</li>
+				</ul>
+
+				<ul class="nav-list nav-list-larger">
+					<li class="nav-item nav-item-hidden">
+						<a href="index.html" class="nav-link nav-link-apple"></a>
+					</li>
+					<li class="nav-item">
+						<a href="#home" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="#demo" class="nav-link">Demos</a>
+					</li>
+					<li class="nav-item">
+						<a href="#feature" class="nav-link">Features</a>
+					</li>
+					<li class="nav-item">
+						<a href="#core-feature" class="nav-link">Core Features</a>
+					</li>
+					<!-- <li class="nav-item">
+						<a href="#" class="nav-link">Tv</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Music</a>
+					</li> -->
+					<li class="nav-item">
+						<a href="#Support" class="nav-link">Support</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://wizardly-torvalds-519a38.netlify.app/" class="nav-link">Contact Us</a>
+					</li>
+					<li class="nav-item">
+						<a href="signin" class="nav-link">Login</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link nav-link-search"></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<script>
+		function openNav() {
+		  document.getElementById("mySidenav").style.width = "250px";
+		}
+		
+		function closeNav() {
+		  document.getElementById("mySidenav").style.width = "0";
+		}
+		</script>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a onclick="closeNav()" href="#home">Home</a>
+			<a onclick="closeNav()" href="#demo">Demos</a>
+			<a onclick="closeNav()" href="#feature">Features</a>
+			<a onclick="closeNav()" href="#core-feature">Core Features</a>
+			<a onclick="closeNav()" href="#Support">Support</a>
+			<a onclick="closeNav()" href="https://wizardly-torvalds-519a38.netlify.app/">Contact Us</a>
+			<a onclick="closeNav()" href="/signin">Login</a>
+			
+		  </div>
+
+	<section id="home" style="background-image: url(images/header-bg.jpg); background-size: cover; background-repeat: no-repeat;width: 100%; height: 100vh;">
+		<div class="loader">
+			<h1 class="wow bounceInLeft">E-Profile</h1>
+			<p class="p wow bounceInRight">Creative, Beautiful and UX friendly</p>
+		<center><p class="pfbtn wow fadeInDown"><a href="/register" style="color: white;">Create Your free Profile</a></p></center>
+	</div>
+	</section>
+
+	<!-- <section class="banner" style="background-image: url(images/header-bg.jpg); width: 100%; height: 100vh;">
+		<div class="container">
+			<h2>Creative, Beautiful and UX Friendly</h2>
+			
+		</div>
+		<div class="parallax-container">
+			<div class="slide1"><img src="images/b1.png" alt=""></div>
+			<div class="slide2"><img src="images/b2.png" alt=""></div>
+			<div class="slide3"><img src="images/b3.png" alt=""></div>
+			<div class="slide4"><img src="images/b4.png" alt=""></div>
+			<div class="slide4"><img src="images/b5.png" alt=""></div>
+		</div>
+	</section> -->
+
+	<section class="main-demo" id="demo">
+		<div class="container">
+			<div class="text-center">
+				<div class="sec-title centered">
+					<h2 class="wow fadeInUp">Check Out All the pages</h2>
+					<div class="text wow fadeInUp">welcome to the E-Profile App Landing theme</div>
+				</div>
+			</div>
+				
+			<div class="row">
+				<div class="col-lg-4 col-md-6 wow fadeInUp">
+					<div class="image tran-1" style="background-image:url(images/demo-9.png);">
+						<a href="https://wizardly-torvalds-519a38.netlify.app/" target="_blank"><img src="images/page-shape.jpg" alt=""></a>
+					</div>
+					<h3><a href="https://wizardly-torvalds-519a38.netlify.app/" target="_blank">Profile Website</a></h3>
+				</div>
+				<div class="col-lg-4 col-md-6 wow fadeInUp">
+					<div class="image tran-5" style="background-image:url(images/demo-1.png);">
+						<a href="https://hopeful-pike-709dec.netlify.app/" target="_blank"><img src="images/page-shape.jpg" alt=""></a>
+					</div>
+					<h3><a href="https://hopeful-pike-709dec.netlify.app/" target="_blank">E-Commerse 01</a></h3>
+				</div>
+				<div class="col-lg-4 col-md-6 wow fadeInUp">
+					<div class="image tran-5" style="background-image:url(images/demo-2.png);">
+						<a href="https://wizardly-rosalind-9d3f24.netlify.app/" target="_blank"><img src="images/page-shape.jpg" alt=""></a>
+					</div>
+					<h3><a href="https://wizardly-rosalind-9d3f24.netlify.app/" target="_blank">E-Commerse 02</a></h3>
+				</div>
+				<div class="col-lg-4 col-md-6 wow fadeInUp">
+					<div class="image tran-5" style="background-image:url(images/demo-3.png);">
+						<a href="https://wonderful-wing-8ba05d.netlify.app/" target="_blank"><img src="images/page-shape.jpg" alt=""></a>
+					</div>
+					<h3><a href="https://wonderful-wing-8ba05d.netlify.app/" target="_blank">Heath services Website</a></h3>
+				</div>
+				<div class="col-lg-4 col-md-6 wow fadeInUp">
+					<div class="image tran-5" style="background-image:url(images/demo-4.png);">
+						<a href="https://cocky-mayer-40adba.netlify.app/" target="_blank"><img src="images/page-shape.jpg" alt=""></a>
+					</div>
+					<h3><a href="https://cocky-mayer-40adba.netlify.app/" target="_blank">Animated Website</a></h3>
+				</div>
+				<div class="col-lg-4 col-md-6 wow fadeInUp">
+					<div class="image tran-3" style="background-image:url(images/demo-5.png);">
+						<a href="https://silly-poincare-f2d78f.netlify.app/" target="_blank"><img src="images/page-shape.jpg" alt=""></a>
+					</div>
+					<h3><a href="https://silly-poincare-f2d78f.netlify.app/" target="_blank">Developers Website</a></h3>
+				</div>
+				<div class="col-lg-4 col-md-6 wow fadeInUp">
+					<div class="image tran-3" style="background-image:url(images/demo-6.png);">
+						<a href="https://cranky-shaw-f09400.netlify.app/" target="_blank"><img src="images/page-shape.jpg" alt=""></a>
+					</div>
+					<h3><a href="https://cranky-shaw-f09400.netlify.app/" target="_blank">Photography website</a></h3>
+				</div>
+				<div class="col-lg-4 col-md-6 wow fadeInUp">
+					<div class="image tran-1" style="background-image:url(images/demo-7.png);">
+						<a href="https://inspiring-engelbart-f19547.netlify.app/" target="_blank"><img src="images/page-shape.jpg" alt=""></a>
+					</div>
+					<h3><a href="https://inspiring-engelbart-f19547.netlify.app/" target="_blank">Restaurant Website</a></h3>
+				</div>
+				<div class="col-lg-4 col-md-6 wow fadeInUp">
+					<div class="image tran-1" style="background-image:url(images/demo-8.png);">
+						<a href="https://modest-yalow-2addcb.netlify.app/" target="_blank"><img src="images/page-shape.jpg" alt=""></a>
+					</div>
+					<h3><a href="https://modest-yalow-2addcb.netlify.app/" target="_blank">Real Estate Website</a></h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="feature" id="feature">
+		<div class="container">
+			<div class="text-center wow fadeInUp">
+				<div class="sec-title centered">
+					<h2>Our Features </h2>
+				</div>
+			</div>
+			<div class="text-center">
+				<div class="feature-block wow fadeInUp">
+					<h4>Quick Support .</h4>
+					<div class="text">Bought flung reindeer however sed irrespective <br>Begrudging oh asinine angelic less lighted.</div>
+				</div>
+				<div class="feature-block wow fadeInUp">
+					<h4>Responsive Design .</h4>
+					<div class="text">Bought flung reindeer however sed irrespective <br>Begrudging oh asinine angelic less lighted.</div>
+				</div>
+				<div class="feature-block wow fadeInUp">
+					<h4>Time Saving Components .</h4>
+					<div class="text">Bought flung reindeer however sed irrespective <br>Begrudging oh asinine angelic less lighted.</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="feature-icon">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-6 wow fadeInUp">
+					<div class="feature-block-two">
+						<div class="image"><img src="images/icon/1.png" alt=""></div>
+						<h4>19+ Pages .</h4>
+						<div class="text">Begrudging oh asininely angelic less lighted <br>bought flung reindeer however irrespective <br>solemnly as listlessly thus famous. </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 wow fadeInUp">
+					<div class="feature-block-two">
+						<div class="image"><img src="images/icon/2.png" alt=""></div>
+						<h4>Many Shortcodes .</h4>
+						<div class="text">Begrudging oh asininely angelic less lighted <br>bought flung reindeer however irrespective <br>solemnly as listlessly thus famous. </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 wow fadeInUp">
+					<div class="feature-block-two">
+						<div class="image"><img src="images/icon/3.png" alt=""></div>
+						<h4>Retina Ready .</h4>
+						<div class="text">Begrudging oh asininely angelic less lighted <br>bought flung reindeer however irrespective <br>solemnly as listlessly thus famous. </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 wow fadeInUp">
+					<div class="feature-block-two">
+						<div class="image"><img src="images/icon/4.png" alt=""></div>
+						<h4>Free Premium Plugins .</h4>
+						<div class="text">Begrudging oh asininely angelic less lighted <br>bought flung reindeer however irrespective <br>solemnly as listlessly thus famous. </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 wow fadeInUp">
+					<div class="feature-block-two">
+						<div class="image"><img src="images/icon/5.png" alt=""></div>
+						<h4>Timely Updates .</h4>
+						<div class="text">Begrudging oh asininely angelic less lighted <br>bought flung reindeer however irrespective <br>solemnly as listlessly thus famous. </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 wow fadeInUp">
+					<div class="feature-block-two">
+						<div class="image"><img src="images/icon/6.png" alt=""></div>
+						<h4>High Performance .</h4>
+						<div class="text">Begrudging oh asininely angelic less lighted <br>bought flung reindeer however irrespective <br>solemnly as listlessly thus famous. </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 wow fadeInUp">
+					<div class="feature-block-two">
+						<div class="image"><img src="images/icon/7.png" alt=""></div>
+						<h4>Custom Typography .</h4>
+						<div class="text">Begrudging oh asininely angelic less lighted <br>bought flung reindeer however irrespective <br>solemnly as listlessly thus famous. </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 wow fadeInUp">
+					<div class="feature-block-two">
+						<div class="image"><img src="images/icon/8.png" alt=""></div>
+						<h4>Translation Ready .</h4>
+						<div class="text">Begrudging oh asininely angelic less lighted <br>bought flung reindeer however irrespective <br>solemnly as listlessly thus famous. </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 wow fadeInUp">
+					<div class="feature-block-two">
+						<div class="image"><img src="images/icon/9.png" alt=""></div>
+						<h4>Online Shop Pages .</h4>
+						<div class="text">Begrudging oh asininely angelic less lighted <br>bought flung reindeer however irrespective <br>solemnly as listlessly thus famous. </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 wow fadeInUp">
+					<div class="feature-block-two">
+						<div class="image"><img src="images/icon/10.png" alt=""></div>
+						<h4>Fully SEO Optimized .</h4>
+						<div class="text">Begrudging oh asininely angelic less lighted <br>bought flung reindeer however irrespective <br>solemnly as listlessly thus famous. </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 wow fadeInUp">
+					<div class="feature-block-two">
+						<div class="image"><img src="images/icon/11.png" alt=""></div>
+						<h4>Friendly Support .</h4>
+						<div class="text">Begrudging oh asininely angelic less lighted <br>bought flung reindeer however irrespective <br>solemnly as listlessly thus famous. </div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 wow fadeInUp">
+					<div class="feature-block-two">
+						<div class="image"><img src="images/icon/12.png" alt=""></div>
+						<h4>Highly Customizable .</h4>
+						<div class="text">Begrudging oh asininely angelic less lighted <br>bought flung reindeer however irrespective <br>solemnly as listlessly thus famous. </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- <section class="portfolio" id="portfolio">
+		<div class="container">
+			<div class="text-center">
+				<div class="sec-title centered">
+					<h2>Ready to Use Portfolio Pages</h2>
+				</div>
+			</div>				
+			<div class="two-item-carousel owl-carousel owl-theme owl-dot-none owl-nav-style-three">
+				<div class="image"><img src="images/portfolio-1.jpg" alt=""></div>
+				<div class="image"><img src="images/portfolio-2.jpg" alt=""></div>
+				<div class="image"><img src="images/portfolio-3.jpg" alt=""></div>
+				<div class="image"><img src="images/portfolio-4.jpg" alt=""></div>
+				<div class="image"><img src="images/portfolio-5.jpg" alt=""></div>
+				<div class="image"><img src="images/portfolio-6.jpg" alt=""></div>
+				<div class="image"><img src="images/portfolio-1.jpg" alt=""></div>
+				<div class="image"><img src="images/portfolio-2.jpg" alt=""></div>
+				<div class="image"><img src="images/portfolio-3.jpg" alt=""></div>
+				<div class="image"><img src="images/portfolio-4.jpg" alt=""></div>
+				<div class="image"><img src="images/portfolio-5.jpg" alt=""></div>
+				<div class="image"><img src="images/portfolio-6.jpg" alt=""></div>
+			</div>
+		</div>
+	</section> -->
+
+	<section class="core-feature" id="core-feature">
+		<div class="container">
+			<div class="text-center mb-30 wow fadeInUp">
+				<div class="sec-title centered">
+					<h2>Core Features</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2 col-sm-3 col-xs-6 wow fadeInUp">
+					<div class="image"><img src="images/icon/1.jpg" alt=""></div>
+					<h5>200+ Font <br>Icons</h5>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6 wow fadeInUp">
+					<div class="image"><img src="images/icon/2.jpg" alt=""></div>
+					<h5>Google <br>Fonts</h5>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6 wow fadeInUp">
+					<div class="image"><img src="images/icon/3.jpg" alt=""></div>
+					<h5>Clean & Commented <br>Code</h5>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6 wow fadeInUp">
+					<div class="image"><img src="images/icon/4.jpg" alt=""></div>
+					<h5>Custom CSS <br>Ready</h5>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6 wow fadeInUp">
+					<div class="image"><img src="images/icon/5.jpg" alt=""></div>
+					<h5>Child theme <br>Included</h5>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6 wow fadeInUp">
+					<div class="image"><img src="images/icon/6.jpg" alt=""></div>
+					<h5>SEO <br>Ready</h5>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6 wow fadeInUp">
+					<div class="image"><img src="images/icon/7.jpg" alt=""></div>
+					<h5>Various Post <br>Formats</h5>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6 wow fadeInUp">
+					<div class="image"><img src="images/icon/8.jpg" alt=""></div>
+					<h5>5 homepage <br>Style</h5>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6 wow fadeInUp">
+					<div class="image"><img src="images/icon/9.jpg" alt=""></div>
+					<h5>Parallax <br>effect</h5>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6 wow fadeInUp">
+					<div class="image"><img src="images/icon/10.jpg" alt=""></div>
+					<h5>Unique effects and <br>functionality</h5>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6 wow fadeInUp">
+					<div class="image"><img src="images/icon/11.jpg" alt=""></div>
+					<h5>Cross Browser <br>Optimisation</h5>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6 wow fadeInUp">
+					<div class="image"><img src="images/icon/12.jpg" alt=""></div>
+					<h5>Full Width & <br>Boxed Layout</h5>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6 wow fadeInUp">
+					<div class="image"><img src="images/icon/13.jpg" alt=""></div>
+					<h5>Awesome Gallery <br>Showcase Pages</h5>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6 wow fadeInUp">
+					<div class="image"><img src="images/icon/14.jpg" alt=""></div>
+					<h5>Creative Blog <br>Pages</h5>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6 wow fadeInUp">
+					<div class="image"><img src="images/icon/15.jpg" alt=""></div>
+					<h5>Shop <br>Pages</h5>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="Support" style="background-image: url(images/header-bg.jpg); background-size: cover; background-repeat: no-repeat;width: 100%; height: 100vh;">
+		<div class="loader">
+		<center><h1>Get your project done creatively</h1></center>
+		<center><p class="p" style="font-size: 20px;">Choose E-Profile Today and build your website easily without coding</p></center>
+	<center><a href="https://wizardly-torvalds-519a38.netlify.app/"><button class="pfbtn">Contact Us</button></a></center>
+	</div>
+	</section>
+
+	<!-- <section class="footer" style="background-image: url(images/footer-bg.jpg);">
+		<div class="overlay"><img src="images/footer-shape.png" alt=""></div>
+		<div class="container">
+			<h2>Get your project done creatively</h2>
+			<div class="text">Choose Bari Today and build your website easily without coding</div>
+			<div class="link-btn">
+				<a href="https://themeforest.net/item/bari-portfolio-for-freelancers-agencies/22131398?s_rank=1" class="theme-btn btn-style-one" target="_blank">Purchase Today</a>
+			</div>
+			
+		</div>
+	</section> -->
+
+<script src="js/wow.min.js"></script>
+<script src="js/wow.js"></script>
+
+	<!-- Scroll Top Button -->
+	<button class="scroll-top scroll-to-target" data-target="html">
+	    <span class="fa fa-angle-up"></span>
+	</button>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/pagenav.js"></script>
+	<script src='../../../cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>
+	<script src='../../../cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/utils/Draggable.min.js'></script>
+	<script src="js/mousemoveparallax.js"></script>
+	<script src="js/owl.js"></script>
+	<script src="js/script.js"></script>
+	<!-- <script src="js/main.js"></script> -->
+	
+</body>
+
+</html>

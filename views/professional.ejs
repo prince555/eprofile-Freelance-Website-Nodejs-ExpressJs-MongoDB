@@ -1,0 +1,47 @@
+<%- include('header') %>
+
+
+  <form action="/professional" method="POST" role="form">
+  <div class="Cont">
+    <h2 class="name">Professional Skills</h2>
+
+    <% if(success !=''){%>
+      <div class="alert alert-success">
+        <a class="alert-link"><%= success %></a>.
+      </div><br>
+      <% } %>
+
+    <% if(records.length >0){
+      records.forEach(function(row){
+      %>
+
+  <div class="alert alert-warning">
+    <strong>Skill: </strong><a class="alert-link"><%= row.fname %></a>.
+    <strong>Percentage: </strong><a class="alert-link"><%= row.fpercent %></a>.<br>
+    <a href="/professional/edit/<%= row._id %>"><strong style="color: blue;">Edit <i class="fa fa-edit"></i></strong></a>
+    <a href="/professional/delete/<%= row._id %>"><strong style="color: red">Delete <i class="fa fa-trash"></i></strong></a>
+  </div>
+  <%  }) } %>
+
+  <div class="alert alert-info">
+    <input type="text" class="form-control" name="fname" placeholder="enter your Professional Skill">
+  </div>
+  <div class="alert alert-info">
+    <input type="text" class="form-control" name="fpercent" placeholder="Enter percent of knowledge you have on that skill">
+  </div>
+  <div class="alert alert-info" style="display: none;">
+    <input type="text" class="form-control" name="user_name" value="<%= user.name %>">
+  </div>
+  <div class="alert alert-info">
+    <input type="submit" >
+  </div>
+  </div>
+  <a style="margin-left: 20px; font-size:20px;" href="/technical">previous</a>
+  <a style="float:right; margin-right: 20px; font-size:20px;" href="/education">next</a>
+  </form>
+  <hr>
+
+
+</div>
+</body>
+</html>

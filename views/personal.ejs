@@ -1,0 +1,84 @@
+<%- include('header') %>
+
+  <form action="/personal" method="POST" role="form">
+	<div class="Cont">
+    <h2 class="name">Personal Details</h2>
+    <% if(success !=''){%>
+    <div class="alert alert-success">
+      <a class="alert-link"><%= success %></a>.
+    </div><br>
+    <% } %>
+
+	<div class="alert alert-warning">
+    <strong>User Name: </strong><a class="alert-link"><%= records.uname %></a>.
+  </div>
+  <div class="alert alert-warning">
+    <strong>Profession: </strong><a class="alert-link"><%= records.profess %></a>.
+  </div>
+		<div class="alert alert-warning">
+    <strong>Contact Number: </strong> <a class="alert-link"><%= records.phnum %></a>.
+  </div>
+  <div class="alert alert-warning">
+    <strong>E-mail: </strong><a class="alert-link"><%= records.mail %></a>.
+  </div>
+		<div class="alert alert-warning">
+    <strong>Address: </strong> <a class="alert-link"><%= records.addr %>. </a>.
+  </div>
+  <div class="alert alert-warning">
+    <strong>FaceBook Id: </strong> <a class="alert-link"><%= records.fbid %> </a>.
+  </div>
+  <div class="alert alert-warning">
+    <strong>Twitter Id: </strong> <a class="alert-link"><%= records.twid %> </a>.
+  </div>
+  <div class="alert alert-warning">
+    <strong>Github Id: </strong> <a class="alert-link"><%= records.gitid %> </a>.
+  </div>
+  <div class="alert alert-warning">
+    <strong>LinkedIn Id: </strong> <a class="alert-link"><%= records.linid %> </a>.
+  </div>
+
+  <div class="alert alert-info">
+    <input type="text" class="form-control" name="uname" value="<%= records.uname %>" placeholder="enter user name">
+  </div>
+  <div class="alert alert-info">
+    <input type="text" class="form-control" name="profess" value="<%= records.profess %>" placeholder="enter Profession">
+  </div>
+  <div class="alert alert-info">
+    <input type="text" class="form-control" name="phnum" value="<%= records.phnum %>" placeholder="enter phone number">
+  </div>
+  <div class="alert alert-info">
+    <input type="text" class="form-control" name="mail" value="<%= records.mail %>" placeholder="enter email">
+  </div>
+  <div class="alert alert-info">
+    <input type="text" class="form-control" name="addr" value="<%= records.addr %>" placeholder="enter address">
+  </div>
+  <div class="alert alert-info">
+    <input type="text" class="form-control" name="fbid" value="<%= records.fbid %>" placeholder="enter FaceBook Id">
+  </div>
+  <div class="alert alert-info">
+    <input type="text" class="form-control" name="twid" value="<%= records.twid %>" placeholder="enter Twitter Id">
+  </div>
+  <div class="alert alert-info">
+    <input type="text" class="form-control" name="gitid" value="<%= records.gitid %>" placeholder="enter Github Id">
+  </div>
+  <div class="alert alert-info">
+    <input type="text" class="form-control" name="linid" value="<%= records.linid %>" placeholder="enter LinkedIn Id">
+  </div>
+  <div class="alert alert-info" style="display: none;">
+    <input type="text" class="form-control" name="user_name" value="<%= user.name %>">
+  </div>
+  <!-- <div class="alert alert-info" style="display: none;">
+    <input type="text" class="form-control" name="user_id" value="<%= user._id %>">
+  </div> -->
+  <div class="alert alert-info">
+    <input type="submit" value="update">
+  </div>
+	</div>
+  </form>
+  <a style="margin-left: 20px; font-size:20px;" href="/card">previous</a>
+  <a style="float:right; margin-right: 20px; font-size:20px;" href="/about">next</a>
+  <hr>
+
+</div>
+</body>
+</html>

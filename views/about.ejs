@@ -1,0 +1,35 @@
+<%- include('header') %>
+
+
+    <form action="/about" method="POST" role="form">
+  <div class="Cont">
+    <h2 class="name">About Me</h2>
+    <% if(success !=''){%>
+    <div class="alert alert-success">
+      <a class="alert-link"><%= success %></a>.
+    </div><br>
+    <% } %>
+
+  <div class="alert alert-warning">
+    <a class="alert-link"><%= records.about %></a>.
+  </div>
+
+  <div class="alert alert-info">
+    <input type="text" class="form-control" name="about" value="<%= records.about %>" placeholder="enter About you">
+  </div>
+  <!-- <div class="alert alert-info" style="display: none;">
+    <input type="text" class="form-control" name="user_name" value="<%= user.name %>">
+  </div> -->
+  <div class="alert alert-info">
+    <input type="submit" value="update">
+  </div>
+  </div>
+  </form>
+  <a style="margin-left: 20px; font-size:20px;" href="/personal">previous</a>
+  <a style="float:right; margin-right: 20px; font-size:20px;" href="/technical">next</a>
+
+  <hr>
+
+</div>
+</body>
+</html>

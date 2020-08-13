@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+            .em-hand {
+  font-size: 20px;
+  text-align: center;
+  margin: 0.5em 0.5em 1em;
+  -moz-animation: wave 0.3s alternate infinite;
+  -webkit-animation: wave 0.3s alternate infinite;
+  animation: wave 0.3s alternate infinite;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+@-moz-keyframes wave {
+  0% {
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+}
+@-webkit-keyframes wave {
+  0% {
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+}
+@keyframes wave {
+  0% {
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+}
+.nav-up {
+  margin-top: -100px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #efeeee;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav.switched {
+  background-color: #1A1A1D;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2c2828;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav.switched a {
+  color: #66FCF1;
+}
+
+.sidenav a:hover {
+  color: blue;
+}
+.sidenav.switched a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.menu{
+    display: none;
+}
+@media screen and (max-width: 1000px){
+ .menu{
+    display: block;
+ }
+ .menu.switched{
+    color: #66FCF1;
+ }
+}
+.nav-link.light{
+    display: none;
+}
+.light{
+    display: none;
+}
+.light.switched{
+    display: block;
+}
+.dark{
+    margin-top: 10px;
+}
+.dark.switched{
+    display: none;
+}
+.mh-home.switched{
+    background-color: #1F2833;
+}
+.mh-about.switched{
+    background-color: #1F2833;
+}
+.mh-service.switched{
+    background-color: #1F2833;
+}
+.mh-skills.switched{
+    background-color: #1F2833;
+}
+.mh-experince.switched{
+    background-color: #1F2833;
+}
+.mh-pricing.switched{
+    background-color: #1F2833;
+}
+.mh-footer.switched{
+    background-color: #1F2833;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Animinated Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+</head>
+<style>
+	body{
+		background-image: url(images/bg.jpg);
+		background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+	}
+	#cat{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		background: #cf1334;
+	}
+	.pinnu{
+		width: 300px;
+		padding: 40px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		background: #cf1334;
+        text-align: center;
+        border: 3px solid white;
+        border-radius: 10px;
+	}
+
+	.pinnu h1{
+		color: white;
+		text-transform: uppercase;
+		font-weight: 500;
+
+	}
+
+	.pinnu input[type = "text"],.pinnu input[type = "password"]{
+			border: 0;
+			background: none;
+			display: block;
+			margin: 20px auto;
+			text-align: center;
+			border: 2px solid #3498db;
+			padding: 14px 10px;
+			width: 200px;
+			outline: none;
+			color: white;
+			border-radius: 24px;
+			transition: 0.25s;
+	}
+
+	.pinnu input[type = "text"]:focus,.pinnu input[type = "password"]:focus{
+		width: 280px;
+		border-color: #2ecc71;
+	}
+
+	.pinnu input[type = "submit"]{
+			border: 0;
+			background: none;
+			display: block;
+			margin: 20px auto;
+			text-align: center;
+			border: 2px solid #2ecc71;
+			padding: 14px 40px;
+			width: 200px;
+			outline: none;
+			color: white;
+			border-radius: 24px;
+			transition: 0.25s;
+			cursor: pointer;
+	}
+	.pinnu input[type = "submit"]:hover{
+		background: #2ecc71;
+    }
+    ::placeholder {
+        color: white;
+        opacity: 1; 
+      }
+      @media screen and (max-width: 700px){
+        .pinnu{
+            padding: 1px;
+        }
+      }
+
+
+</style>
+<body background="IMG-527f5d6c.jpg">
+<div id="cat">
+<form class="pinnu" action="/users/login" method="post">
+	<h1>signin</h1>
+	<% include ./partials/messages %>
+	<input style="color: white;" type="text" id="email" name="email" placeholder="Email">
+	<input type="password" name="password" id="password" placeholder="password" required>
+    <input type="submit" name="" value="login" required>
+    <p style="color: white;" class="lead mt-4">Don't have a account? <a style="color: white;" href="/register">SignUp</a></p>
+</form>
+</div>
+</body>
+</html>
