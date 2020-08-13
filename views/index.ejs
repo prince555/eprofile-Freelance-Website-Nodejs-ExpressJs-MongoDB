@@ -18,47 +18,7 @@
 	<!-- Fav Icons -->
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 	<link rel="icon" href="images/favicon.png" type="image/x-icon">
-	<style>
-		
-		.sidenav {
-		  height: 100%;
-		  width: 0;
-		  position: fixed;
-		  z-index: 9999;
-		  top: 0;
-		  right: 0;
-		  background-color: #cf1334;
-		  overflow-x: hidden;
-		  transition: 0.5s;
-		  padding-top: 60px;
-		}
-		
-		.sidenav a {
-		  padding: 8px 8px 8px 32px;
-		  text-decoration: none;
-		  font-size: 25px;
-		  color: #f9f8f8;
-		  display: block;
-		  transition: 0.3s;
-		}
-		
-		.sidenav a:hover {
-		  color: #f1f1f1;
-		}
-		
-		.sidenav .closebtn {
-		  position: absolute;
-		  top: 0;
-		  left: 25px;
-		  font-size: 36px;
-		  margin-left: 50px;
-		}
-		
-		@media screen and (max-height: 450px) {
-		  .sidenav {padding-top: 15px;}
-		  .sidenav a {font-size: 18px;}
-		}
-		</style>
+	
 
 </head>
 <body>
@@ -142,15 +102,7 @@
 			</nav>
 		</div>
 	</header>
-	<script>
-		function openNav() {
-		  document.getElementById("mySidenav").style.width = "250px";
-		}
-		
-		function closeNav() {
-		  document.getElementById("mySidenav").style.width = "0";
-		}
-		</script>
+
 		<div id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<a onclick="closeNav()" href="#home">Home</a>
@@ -501,6 +453,7 @@
 	<script src="js/mousemoveparallax.js"></script>
 	<script src="js/owl.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/sidenav.js"></script>
 	<!-- <script src="js/main.js"></script> -->
 	
 </body>
